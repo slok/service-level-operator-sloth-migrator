@@ -6,7 +6,7 @@ Example: `go run ./ --slos ./example/awesome.yaml --out /tmp && sloth generate -
 
 ## Getting started
 
-These the steps:
+These are the steps:
 
 - Get [service-level-operator] SLOs from Kubernetes using `kubectl`.
 - Use this CLI to migrate them.
