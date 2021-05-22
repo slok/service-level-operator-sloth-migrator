@@ -24,7 +24,7 @@ go run ./  --slos ./slos.yaml --out ./sloth-specs
 
 # Check sloth specs by generating prometheus-operator rules CRs.
 mkdir ./prom-specs
-for f in ./out/*; do sloth generate -i ${f} -o ./prom-specs/$(basename ${f}); done
+for f in ./sloth-specs/*; do sloth generate -i ${f} -o ./prom-specs/$(basename ${f}); done
 ```
 
 ## Advanced options
