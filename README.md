@@ -2,7 +2,7 @@
 
 A simple CLI that will migrate [service-level-operator] CRs to [sloth] CRs.
 
-Example: `go run ./ --slos ./example/specs.yaml --out /tmp && sloth generate -i /tmp/_gen__awesome-service.yaml`
+Example: `go run ./ --slos ./example/awesome.yaml --out /tmp && sloth generate -i /tmp/_gen__awesome-service.yaml`
 
 ## Getting started
 
