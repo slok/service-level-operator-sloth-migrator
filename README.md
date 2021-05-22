@@ -2,6 +2,8 @@
 
 A simple CLI that will migrate [service-level-operator] CRs to [sloth] CRs.
 
+Example: `go run ./ --slos ./example/specs.yaml --out /tmp && sloth generate -i /tmp/_gen__awesome-service.yaml`
+
 ## Getting started
 
 These the steps:
@@ -14,7 +16,7 @@ Lets see an example:
 
 ```bash
 # Get service-level-operator SLOs.
-kubect get --all-namespaces -o yaml > ./slos.yaml
+kubect get servicelevels --all-namespaces -o yaml > ./slos.yaml
 
 # Migrate to sloth.
 mkdir ./sloth-specs
